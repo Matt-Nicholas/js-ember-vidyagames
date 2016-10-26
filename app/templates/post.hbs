@@ -1,0 +1,10 @@
+{{#link-to 'post' post.id}}
+<p>{{post.title}}</p>
+{{/link-to}}
+
+<h2>{{model.title}}</h2><br>
+<img class="article-pics" src="{{model.image}}" alt="" /><br>
+<p>Author: {{model.author}}</p><br>
+{{model.article}}<br>
+{{model.date}}<br>
+{{update-post post=model update="update" destroyPost="destroyPost"}}

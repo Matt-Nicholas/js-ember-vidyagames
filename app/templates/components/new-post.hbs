@@ -1,0 +1,26 @@
+  <div>
+    <button {{action 'closeModal'}} id="exit-butt">&#10008;</button>
+    <form  {{action 'savePost' on="submit"}}>
+      <div class="form-group">
+        <label class="new-post-label" for="title">Title</label>
+        {{input value=title id="title" required=true}}
+      </div>
+      <div class="form-group">
+        <label class="new-post-label" for="author">Author</label>
+        {{input value=author id="author" required=true}}
+      </div>
+      <div class="form-group">
+        <label class="new-post-label" for="date">Date</label>
+        {{input value=date id="date" required=true}}
+      </div>
+      <div class="form-group">
+        <label class="new-post-label" for="image">Image URL</label>
+        {{input value=image id="image" required=true}}
+      </div>
+      <div class="form-group">
+        <label class="new-post-label" for="article">Article</label>
+        {{textarea value=article id="article" required=true}}
+      </div>
+      <button type="submit">Save</button>
+    </form>
+  </div>

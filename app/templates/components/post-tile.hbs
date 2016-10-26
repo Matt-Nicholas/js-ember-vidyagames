@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-xs-3">
+    <img class="post-pic" src="{{post.image}}" alt="{{post.title}}" />
+  </div>
+  <div class="col-xs-9">
+    {{#link-to 'post' post.id}}
+    <p>{{post.title}}</p>
+    {{/link-to}}
+    <p>{{post.article}}</p>
+    <p>{{post.author}}</p>
+    <p>{{post.date}}</p>
+  </div>
+</div>
