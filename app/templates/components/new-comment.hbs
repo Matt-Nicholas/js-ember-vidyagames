@@ -1,0 +1,16 @@
+<h1>New Comment</h1>
+  <div class="new-comment">
+    <form {{action 'saveComment' on="submit"}}>
+      <div id="author-div"class="form-group">
+
+        <label for="author">Author</label>
+        {{input value=author id="author" required=true}}
+      </div>
+      <div id="content-div"class="form-group">
+
+        <label for="content">Content</label>
+        {{textarea class="comment-text" value=content id="content" required=true}}
+      </div>
+      <button type="submit">Save</button>
+    </form>
+  </div>

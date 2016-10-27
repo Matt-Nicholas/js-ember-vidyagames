@@ -1,8 +1,7 @@
+{{outlet 'my-modal'}}
 <button class="btn-danger" {{action 'openModal' 'my-modal'}} id="pumpkin-butt"><img id="pumpkin-butt-img"src="assets/images/pumpkin.png"></button>
-{{#each model as |post|}}
+{{#each model.posts as |post|}}
 <div class="post-div">
   {{post-tile post=post}}
 </div>
 {{/each}}
-
-{{outlet 'my-modal'}}

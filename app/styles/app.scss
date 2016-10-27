@@ -1,0 +1,193 @@
+@import "bootstrap";
+// // Option "dont be afraid"
+// $primarycolor: #FF9B52;
+// $secondarycolor: #E8BD90;
+// $thirdendarycolor: #664945;
+// $fourthendarycolor: #7AA29A;
+// $fifthendarycolor: #3F898C;
+// // option scary monsters
+// $primarycolor: #2E2635;
+// $secondarycolor: #FFEED2;
+// $thirdendarycolor: #932005;
+// $fourthendarycolor: #C4461E;
+// $fifthendarycolor: #D4AA91;
+// // // allHallows eve
+$primarycolor: #2E2E2E;
+$secondarycolor: #D18A20;
+$thirdendarycolor: #C2641C;
+$fourthendarycolor: #E4DCA4;
+$fifthendarycolor: #758c5c;
+$sixthendarycolor: #404d32;
+$seventhendarycolor: #FFEED2;
+// // // derfells pumpkin
+// $primarycolor: #BA4806;
+// $secondarycolor: #E35F22;
+// $thirdendarycolor: #BA780D;
+// $fourthendarycolor: #CF8D13;
+// $fifthendarycolor: #FCBC53;
+
+body {
+  font-family: fantasy;
+  background-color: $primarycolor;
+}
+
+.post-div {
+  background-color: $fourthendarycolor;
+  padding: 20px;
+  padding-top: 0;
+  margin: 5px;
+  margin-bottom: 20px;
+  border: inset 5px $thirdendarycolor;
+  // border-radius: 5px;
+  opacity: .9;
+  position: relative;
+}
+
+.comment-div {
+  background-color: $seventhendarycolor;
+  padding: 20px;
+  padding-top: 0;
+  margin: 5px;
+  margin-bottom: 20px;
+  border: inset 5px $fifthendarycolor;
+  // border-radius: 5px;
+  opacity: .9;
+  position: relative;
+}
+
+.post-pic {
+  height: 150px;
+}
+
+#article{
+  height: 200px;
+  width: 95%;
+}
+
+#myPopup {
+  padding: 10px;
+  background-color: $fourthendarycolor;
+  position: absolute;
+  border: outset 10px $thirdendarycolor;
+  z-index: 1;
+  margin-left: 15%;
+  height: 600px;
+  width: 70%;
+  // border-radius: 5px !important;
+
+}
+
+#myPopup button {
+  border: 3px outset $fourthendarycolor;
+  // border-radius: 5px !important;
+
+}
+
+
+
+#exit-butt{
+  float: right;
+  border: 3px outset $fourthendarycolor;
+  // border-radius: 5px !important;
+
+}
+
+.jumbotron {
+  background-color: $secondarycolor;
+  border: inset 5px $thirdendarycolor;
+  border-radius: 0px !important;
+}
+
+
+
+#pumpkin-butt{
+  background-color: $fifthendarycolor;
+  border: outset 3px $sixthendarycolor;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+#pumpkin-butt:hover{
+  background-color: $sixthendarycolor;
+  border: outset 3px $fifthendarycolor;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+
+#pumpkin-butt-img{
+  max-width: 30px;
+}
+.new-post-label {
+  width: 50px;
+}
+
+#sound {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.scrollable {
+  border: outset 5px $fifthendarycolor;
+  overflow-y:auto;
+  background-color: $seventhendarycolor;
+  max-height: 200px;
+  height: 200px;
+}
+
+
+.post-title{
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.image-box {
+  border: outset 5px $fifthendarycolor;
+  width: 100%;
+  height: 200px;
+}
+
+.image-box img {
+  display: block;
+  left: 0;
+  background-color: $seventhendarycolor;
+  right: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.new-comment {
+  text-align: center;
+  width: 50%;
+  background-color: $secondarycolor;
+  border: inset 5px $thirdendarycolor;
+  border-radius: 0px !important;
+  height: 100px;
+  // #author-div {
+  //   float:left;
+  // }
+  #content-div {
+    width: 100%;
+    float: right;
+    #author{
+      min-width: 300px;
+    }
+    textarea{
+      width: 70%;
+    }
+  }
+}
+
+.post-page {
+  padding: 10px;
+  border: outset 5px $thirdendarycolor;
+  background-color: $fourthendarycolor;
+  img {
+    border: inset 5px $fifthendarycolor;
+    width: 100%;
+    max-height: 750px;
+  }
+}

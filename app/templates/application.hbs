@@ -1,10 +1,32 @@
 <div class= "container">
   <header class= "jumbotron">
-    <div class="snavbar">
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      {{#link-to 'index' class="navbar-brand"}}VidyaGames{{/link-to}}
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav">
+            {{#link-to 'index' tagName="li"}}<a href="">Home</a>{{/link-to}}
+            {{#link-to 'contact' tagName="li"}}<a href="">Contact Us!</a>{{/link-to}}
+            {{#link-to 'about' tagName="li"}}<a href="">About!</a>{{/link-to}}
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <!-- <div class="snavbar">
       <nav class="navbar navbar-default">
-        <div class="container-fluid">
+        <div class="container-fluid"> -->
           <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
+          <!-- <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
@@ -12,9 +34,9 @@
               <span class="icon-bar"></span>
             </button>
             {{#link-to "index" class="navbar-brand"}} VidyaGames{{/link-to}}
-          </div>
+          </div> -->
           <!-- Collect the nav links, forms, and other content for toggling -->
-          <div>
+          <!-- <div>
             <form class="navbar-form navbar-left">
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Search">
@@ -26,12 +48,12 @@
               <li>{{#link-to 'about'}}About!{{/link-to}}</li>
 
             </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+           </div>
+        </div>
       </nav>
-    </div>
+    </div> -->
   </header>
-  <iframe id="sound" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/90802014&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" ></iframe>
+  <iframe id="sound" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/90802014&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" ></iframe>
   {{outlet}}
   <hr>
   <footer>
