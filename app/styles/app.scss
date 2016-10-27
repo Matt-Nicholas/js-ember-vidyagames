@@ -258,6 +258,11 @@ body {
   // margin-left: 25%;
 }
 
+.navbar{
+  border: outset 5px $fifthendarycolor;
+  border-radius: .1px !important;
+}
+
 #contact{
   background-color: $fourthendarycolor;
   padding: 20px;
