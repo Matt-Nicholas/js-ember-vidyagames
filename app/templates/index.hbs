@@ -1,5 +1,5 @@
 {{outlet 'my-modal'}}
-<button class="btn-danger" {{action 'openModal' 'my-modal'}} id="pumpkin-butt"><img id="pumpkin-butt-img"src="assets/images/pumpkin.png"></button>
+<button class="btn-danger" {{action 'openModal' 'my-modal'}} id="pumpkin-butt"><span id="left-pump"><img id="pumpkin-butt-img"src="assets/images/pumpkin.png"></span><span id="butt-pump-text">New Post</span><span id="right-pump"><img id="pumpkin-butt-img"src="assets/images/pumpkin.png"></span></button>
 {{#each model.posts as |post|}}
 <div class="post-div">
   {{post-tile post=post}}
